@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
+import { Header, Home } from "./components";
 
 export default function App() {
   return (
     // BEM convention
     <div className="app">
-      <h1>Whatz Up from App.js</h1>
-      {/* Header -> Top banner*/}
-      {/* Home */}
+      <Header />
+      <Home />
     </div>
   );
 }
