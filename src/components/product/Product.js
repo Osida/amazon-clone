@@ -1,25 +1,28 @@
 import React from "react";
 import "./styles/ProductStyles.css";
 
-export default function Product() {
+export default function Product({ id, title, image, price, rating }) {
   return (
     <div className="product">
       <div className="product__info">
-        <p>The product description</p>
+        <p>{title}</p>
         <p className="product__price">
           <small>$</small>
-          <strong>29.99</strong>
+          <strong>{price}</strong>
         </p>
 
         <div className="product__rating">
-          <p>star</p>
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <p>⭐</p>
+            ))}
         </div>
       </div>
 
-      <img
-        src="https://images.unsplash.com/photo-1607656311408-1e4cfe2bd9fc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-        alt="product"
-      />
+      <img src={image} alt="product" />
+
+      <button>Add to basket</button>
     </div>
   );
 }
