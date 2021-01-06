@@ -1,0 +1,22 @@
+export const background = {
+  tutorial_image:
+    "https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg",
+  winter_season:
+    "https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/YTQzYWRkNWYt/YTQzYWRkNWYt-YTRjMDIzNTUt-w3000._CB413865406_.jpg",
+  ring_doorbell:
+    "https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/Nzg3NzIxZDct/Nzg3NzIxZDct-OTgzNWJkZmYt-w3000._CB412095319_.jpg",
+  amazon_giftCard:
+    "https://images-na.ssl-images-amazon.com/images/G/01/gift-certificates/consumer/2020/NYNY/lateplacements/vII/NYNY_D_Hero2_GW_US_EN_v2_3000x1200_20201125._CB416228259_.jpg",
+  boot_sale:
+    "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2020/journeys/MGY0YzMzNTMt/MGY0YzMzNTMt-OWViMWU0YTQt-w3000._CB412090488_.jpg",
+  sylvies_love:
+    "https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/2020/Movie/SYLV_2020_GWBleedingHero_3000x1200_POST_Final_noLocale_PVD6240_SylviesLove._CB416257388_.jpg",
+  wifi_eero6:
+    "https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/Nzg3NzIxZDct/Nzg3NzIxZDct-YTg3MzkwNjMt-w3000._CB412118632_.jpg",
+  stream_music:
+    "https://images-na.ssl-images-amazon.com/images/G/01/AmazonMusic/2020/ACQ/Gateway/HolidayNonPromo/DV5/US-EN_100120_HOLNonPromo_ACQ_GW_Hero_D_3000x1200_CV4_2._CB415751492_.jpg",
+  pc_games:
+    "https://images-na.ssl-images-amazon.com/images/G/01/sm/Gateway/Dec2020_testing/wk2_GW2_snk_3000x1200_EN._CB413778656_.jpg",
+  wolf_of_wallStreet:
+    "https://images-na.ssl-images-amazon.com/images/G/01/IMDbTV/gateway/WolfofWallstreet/GW_DHERO_WolfofWallStreet_3000x1200_EN-US_63832_V12x._CB415546225_.jpg",
+};
