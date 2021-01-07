@@ -6,10 +6,18 @@ import SearchIcon from "@material-ui/icons/Search";
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import ShoppingBasketOutlinedIcon from "@material-ui/icons/ShoppingBasketOutlined";
 import "./HeaderTop.scss";
+import { auth } from "../../firebase";
 
 export default function HeaderTop() {
+  const [{ basket, user }, dispatch] = useStateValue();
+
+  const handleAuthentication = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
+
   const logo = "http://pngimg.com/uploads/amazon/amazon_PNG11.png";
-  const [{ basket }, dispatch] = useStateValue();
 
   return (
     <>
@@ -42,10 +50,16 @@ export default function HeaderTop() {
           </div>
 
           <div className="nav-top__right">
-            <div className="nav-top__option">
-              <span className="nav-top__line1">Hello, Guest</span>
-              <span className="nav-top__line2">Sign in</span>
-            </div>
+            <Link to={!user && ROUTES.LOGIN}>
+              <div onClick={handleAuthentication} className="nav-top__option">
+                <span className="nav-top__line1">
+                  Hello {user ? "" : ", Guest"}
+                </span>
+                <span className="nav-top__line2">
+                  {user ? "Sign Out" : "Sign In"}
+                </span>
+              </div>
+            </Link>
 
             <div className="nav-top__option">
               <span className="nav-top__line1">Returns</span>

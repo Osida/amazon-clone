@@ -1,10 +1,16 @@
 import React from "react";
-import { Checkout } from "../components";
+import { Checkout, HeaderBottom, HeaderTop } from "../components";
 
 export default function CheckoutPage() {
   return (
-    <div>
-      <Checkout />
-    </div>
+    <>
+      <header>
+        <HeaderTop />
+        <HeaderBottom />
+      </header>
+      <main>
+        <Checkout />
+      </main>
+    </>
   );
 }

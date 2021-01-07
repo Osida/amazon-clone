@@ -5,3 +5,4 @@ export { default as Product } from "./product/Product.js";
 export { default as Checkout } from "./checkout/Checkout.js";
 export { default as Subtotal } from "./subtotal/Subtotal.js";
 export { default as CheckoutProduct } from "./checkout-product/CheckoutProduct.js";
+export { default as Login } from "./login/Login.js";
